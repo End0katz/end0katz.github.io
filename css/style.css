@@ -1,0 +1,170 @@
+/* Dark Theme High-Contrast Monospaced CSS for Blobj Project */
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Navbar styling */
+nav {
+    background-color: #000000;
+    border-bottom: 2px solid #00ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    color: #ffff00;
+}
+
+nav a:hover {
+    color: #ff00ff;
+}
+
+nav a.selected {
+    background-color: #ffff00;
+    color: #000000;
+    border-radius: 5px;
+    padding: 1px;
+}
+
+nav img {
+    height: 40px;
+    margin: 10px 9px 10px 19px;
+}
+
+/* Centering ol/ul indexes and bullet points */
+ul,
+ol {
+    list-style-position: inside;
+    text-align: center;
+}
+
+/* Link effect */
+a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffff00;
+    text-decoration: none
+}
+
+/* Header styling */
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.note {
+    color: #a0a0a0;
+    font-size: small;
+    text-align: center;
+}
+
+/* Text styling */
+p {
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Table row styling with 7 cycling colors */
+table tr:nth-child(7n+1) {
+    background-color: #100000;
+}
+
+table tr:nth-child(7n+2) {
+    background-color: #100700;
+}
+
+table tr:nth-child(7n+3) {
+    background-color: #100f00;
+}
+
+table tr:nth-child(7n+4) {
+    background-color: #011000;
+}
+
+table tr:nth-child(7n+5) {
+    background-color: #001010;
+}
+
+table tr:nth-child(7n+6) {
+    background-color: #000610;
+}
+
+table tr:nth-child(7n+7) {
+    background-color: #040010;
+}
+
+/* Background logo */
+/* Define the hue-rotate animation */
+@keyframes hue-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.animated-hueshift {
+    animation: hue-rotate 5s infinite;
+}
+
+.animated-bright {
+    filter: brightness(1000%);
+}
+
+/* Define the classes */
+.bg-logo-div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.bg-logo-img {
+    width: 100%;
+    height: auto;
+    max-height: 100vh;
+    object-fit: contain;
+}
