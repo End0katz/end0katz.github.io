@@ -1,6 +1,5 @@
 // List of script files to include
 const scripts = [
-    '/blobj/javascript/404.js',
     '/blobj/javascript/navbar.js',
     '/javascript/bg_img.js'
 ];
