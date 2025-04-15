@@ -1,6 +1,7 @@
-# Blobj
+# End0katz's github pages
 
-blobj is a generic java library.  
-Not much more to say.
+This is my github pages.
+You can see it at <https://end0katz.github.io>.
 
-Github pages is  at <https://end0katz.github.io/blobj>
+For more information, see <https://end0katz.github.io>.
+For less information, see <https://end0katz.github.io/unhelpful.html>

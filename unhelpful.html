@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please hold please hold please hold please hold please stop reading.</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/images/logo-transparent.png" />
+</head>
+
+<body>
+    <script src="/javascript/bg_img.js"></script>
+
+    <h1>Unhelpful</h1>
+    <p class="note -js-marquee">Your call is important to us. Please hold.&nbsp;</p>
+    <p class="note -js-obfuscate">Get your own source code!</p>
+
+    <div class="container" style="margin-bottom: 0%;">
+        <p>This page is so unhelpful!
+            It doesn't even link to the homepage - You have to type in
+            <span class="fake-a" onclick="scrollToEvilGrin()">https://end0katz.github.io/index.html</span> yourself!
+        </p>
+    </div>
+    <script>
+        function scrollToEvilGrin() {
+            const target = document.querySelector("#evil-grin-face");
+            if (target) {
+                target.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+
+    <p class="note -repeated-text" id="repeat-text-1">Your call is important to us. please hold.</p>
+    <script>
+        document.querySelectorAll(".-repeated-text").forEach(text => {
+            text.innerText = (text.innerText + " ").repeat(5000);
+        });
+    </script>
+
+    <script>
+        setInterval(() => {
+            document.querySelectorAll(".-js-marquee").forEach(text => {
+                text.innerText = text.innerText.replaceAll(" ", String.fromCharCode(160)).substring(1).concat(text.innerText.charAt(0));
+                if (Math.floor(Math.random() * 500) <= 1) {
+                    text.innerText = String.fromCharCode(Math.floor(Math.random() * (160 - 0x21)) + 0x21).concat(text.innerText.substring(1));
+                }
+            });
+
+            document.querySelectorAll(".-js-obfuscate").forEach(text => {
+                let result = "";
+                for (let i = 0; i < text.innerText.length; i++) {
+                    result = result.concat(String.fromCharCode(Math.floor(Math.random() * (160 - 0x21)) + 0x21));
+                }
+                text.innerText = result;
+            });
+        }, 100);
+    </script>
+
+    <div class="container">
+        <h2 id="evil-grin-face">&gt;:)</h2>
+        <p>Type it in yourself - once you've scrolled back to the top &gt;&gt;&gt;:}</p>
+    </div>
+</body>
+
+</html>

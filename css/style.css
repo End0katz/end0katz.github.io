@@ -58,14 +58,20 @@ ol {
 }
 
 /* Link effect */
-a {
+a,
+.fake-a {
     color: #00ffff;
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.fake-a:hover {
     color: #ffff00;
     text-decoration: none
+}
+
+.fake-a:hover {
+    cursor: pointer;
 }
 
 /* Header styling */
