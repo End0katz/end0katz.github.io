@@ -131,6 +131,28 @@ table tr:nth-child(7n+7) {
     background-color: #040010;
 }
 
+/* Projects section */
+.project-link {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25px;
+    border-color: #00ff00;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    background: #101010;
+
+    height: 25%;
+    width: 15%;
+
+    --padding-vert: 1%;
+    padding-top: var(--padding-vert);
+    padding-bottom: var(--padding-vert);
+}
+
 /* Background logo */
 /* Define the hue-rotate animation */
 @keyframes hue-rotate {
@@ -167,4 +189,7 @@ table tr:nth-child(7n+7) {
     height: auto;
     max-height: 100vh;
     object-fit: contain;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
