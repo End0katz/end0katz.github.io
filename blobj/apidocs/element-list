@@ -1,6 +1,7 @@
 com.end0katz.blobj
 com.end0katz.blobj.annotations
 com.end0katz.blobj.annotations.meta
+com.end0katz.blobj.collections.grid
 com.end0katz.blobj.containers
 com.end0katz.blobj.containers.generic
 com.end0katz.blobj.containers.integer
